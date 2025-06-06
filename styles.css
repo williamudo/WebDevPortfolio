@@ -1,0 +1,312 @@
+:root {
+      --dark: #121212;
+      --accent: #ff5252;
+      --light: #f5f5f5;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+
+.navbar {
+  border: 1px solid black;
+  background-color: #242424;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.5rem;
+  margin: 20px;
+}
+
+a {
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+.navbar li {
+  display: inline;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+header {
+  height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?technology,abstract') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 3.5rem;
+  
+}
+header img {
+  --rate: calc(3024 / 4032);
+  --base: 350px;
+  height: var(--base);
+  width:  var(--base);     /*calc(var(--base) * var(--rate)); */
+  border-radius: 50%;   /* Makes it circular */
+  object-fit: cover;    /* Ensures the image covers the area without distortion */
+  border: 2px solid #fff;  /* Optional: white border */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+  margin-bottom: 30px;
+}
+
+header h1:hover , header p:hover {
+  transform: skewX(-10deg) scale(1.1);
+}
+
+header h1 {
+  font-size: 4rem;
+  color: var(--dark);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 4px;
+  transition: all .3s ease-in-out;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: var(--dark);
+  transition: all .3s ease-in-out;
+}
+
+
+.projects , .other {
+  padding-top: 60px;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 3.5rem;
+ 
+}
+
+
+.projects h1, .other h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.project-template {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+} 
+
+/* Project Card Styling */
+.project {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically center */
+  text-align: center;
+  padding: 20px;
+  min-height: 250px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Optional: Lift effect on hover */
+.project:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Inner text styling */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+/* Title Styling */
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Paragraph Styling */
+.project-info p {
+  margin: 0;
+  margin-top: auto;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Center the 7th item in the middle column */
+.project-template > .project:nth-child(7) {
+  grid-column: 2 / 3;
+}
+
+/* Add bottom padding to .projects to avoid overlap */
+.projects {
+  text-align: center;
+  padding: 60px 1rem 60px 1rem;
+  margin-bottom: 5rem;
+}
+
+.other {
+  height: 100vh;
+  margin-top: 6rem;
+  padding-top: 3rem;
+}
+
+.extra {
+  margin-top: -10px;
+  font-size: .01rem;
+  margin-bottom: 50px;
+}
+
+
+.other-project-info {
+  margin-top: 10.5rem;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  width: 60%;
+}
+
+
+.other-project-info h3 {
+  font-size: 1.8rem;
+}
+
+.other-project-info p {
+  width: 60%;
+}
+
+
+
+
+.contact {
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 20px;
+  color: var(--light);
+}
+
+
+footer a {
+  color: var(--accent);
+}
+
+
+footer {
+  height: 30vh;
+  text-align: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #777;
+}
+
+footer h1 {
+  color: var(--light);
+  font-size: 3rem;
+ 
+}
+
+/*
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+*/
+
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 5.5rem;
+}
+
+.about h1 {
+  font-size: 4rem;
+}
+
+.about p {
+  margin-top: 10px;
+  font-size: 1.9rem;
+  text-align: center;
+  line-height: 1.5;
+  width: 80%;
+}
+
+
+.project-template {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+
+/* Responsive tweak for smaller screens */
+@media screen and (max-width: 768px) {
+  .project-template {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+}
