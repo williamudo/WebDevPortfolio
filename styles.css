@@ -33,6 +33,8 @@ body {
   margin: 20px;
 }
 
+
+
 a {
   transition: all 0.5s ease-in-out;
 }
@@ -148,7 +150,7 @@ header p {
 .project-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -220,7 +222,26 @@ header p {
   width: 60%;
 }
 
+.pic {
+  --size: 200px;
+  width: calc(var(--size) + 50px);
+  height: var(--size);
+  border-radius: 12px;
+  margin: 0 auto;
 
+}
+
+button {
+    padding-top: 20px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
 
 
 .contact {
@@ -310,3 +331,4 @@ section {
     font-size: 1.2rem;
   }
 }
+
