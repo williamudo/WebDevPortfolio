@@ -10,80 +10,87 @@
 <body>
   <nav class="navbar">
     <ul>
-      <li><a href="index.html">overview.</a></li>
-      <li><a href="projects.html" target="_blank">projects.</a></li>
-      <li><a href="more-projects.html" target="_blank">more projects.</a></li>
-      <li><a href="about.html" target="_blank">about.</a></li>
-      <li><a href="contact.html" target="_blank">contact.</a></li>
+      <li><a href="#overview">overview.</a></li>
+      <li><a href="#projects">projects.</a></li>
+      <li><a href="#more-projects">more projects.</a></li>
+      <li><a href="#about">about.</a></li>
+      <li><a href="#contact">contact.</a></li>
     </ul>
   </nav>
 
-  <header class="overview">
-    <img class="pfp" src="Headshot-Photo-5.jpg" alt="My Headshot Photo">
+  <header id="overview" class="overview">
+    <img class="pfp" src="portfolio-pics/Headshot-Photo-5.jpg" alt="My Headshot Photo">
     <h1>William Udo</h1>
     <p>Front-End / Web Developer</p>
   </header>
 
-  <section class="projects">
+  <section id="projects" class="projects">
     <h1>Projects</h1>
     <div class="project-template">
       <div class="project">
         <div class="project-info">
+          <img class="pic" src="colorCardsUi.png" alt="ProfileCards">
           <h3>Profile Card Layout</h3>
           <p>A responsive profile card layout using CSS Flexbox.</p>
+          <button onClick="window.location.href='https://williamudo.github.io/InteractiveColorCards/';">See More</button>
         </div>
       </div>
       <div class="project">
         <div class="project-info">
-          <h3>Interactive NBA Card + Image Skills</h3>
-          <p>Mastery of HTML and CSS image manipulation through an interactive basketball trading card web project.</p>
-        </div>
-      </div>
-      <div class="project">
-        <div class="project-info">
+          <img class="pic" src="NBACards.png" alt="NBACards">
           <h3>Interactive NBA Card</h3>
           <p>Clean, modern responsive card design for creative professionals.</p>
+           <button onClick="window.location.href='https://williamudo.github.io/NBA-Game-Cards/';">See More</button>
         </div>
       </div>
       <div class="project">
         <div class="project-info">
+          <img class="pic" src="glassUi.png" alt="Glass Weather APP">
           <h3>Glass-Style Weather App</h3>
           <p>A modern weather app UI using HTML and CSS with glassmorphism and forecast display.</p>
+           <button onClick="window.location.href='https://williamudo.github.io/WeatherUI/';">See More</button>
         </div>
       </div>
       <div class="project">
         <div class="project-info">
+          <img class="pic" src="magazineCoverUi.png" alt="magazineCoverUi">
           <h3>Magazine Cover Design</h3>
           <p>Modern magazine layout using CSS typography and background images. Inspired by SLAM Magazine.</p>
+          <button onClick="window.location.href='https://williamudo.github.io/MagazineCover/';">See More</button>
         </div>
       </div>
       <div class="project">
         <div class="project-info">
+          <img class="pic" src="Restaurant.png" alt="Restaurant">
           <h3>Restaurant Menu Design</h3>
           <p>Visually appealing menu with categories, prices, images, and advanced CSS selectors.</p>
+          <button onClick="'https://williamudo.github.io/skincare-newsletter/';">See More</button>
         </div>
       </div>
       <div class="project">
         <div class="project-info">
+          <img class="pic" src="skinUI.png" alt="skinUI">
           <h3>Skin Care Newsletter</h3>
           <p>A subtle, clean design for skincare enthusiasts. Inspired by Ulta Beauty.</p>
+          <button onClick="window.location.href='https://williamudo.github.io/skincare-newsletter/';">See More</button>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="other">
+  <section id="more-projects" class="other">
     <h1>Outside the Frame</h1>
     <p>(More projects outside of Web Development... because why not?)</p>
     <div class="other-project">
       <div class="other-project-info">
+        <img class="pic" src="friendship.jpeg" alt="friendship">
         <h3>Friendship Network Analysis</h3>
         <p>A visual representation of a social network graph with basic algorithmic analysis.</p>
       </div>
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <h1>Who I Am</h1>
     <p class="extra">
       I'm a passionate Front-End Developer who brings ideas to life through code and design. As a Computer Science major at UMKC, I enjoy exploring a wide array of fields from Data Science to Machine Learning and algorithms.
@@ -91,7 +98,7 @@
   </section>
 
   <footer>
-    <h1>Contact Me</h1>
+    <h1 id="contact">Contact Me</h1>
     <p class="contact">Check out my <a href="https://github.com/williamudo" target="_blank">GitHub</a> or find me on <a href="https://www.linkedin.com/in/williamudo/" target="_blank">LinkedIn</a>.</p>
     <p>&copy; William Udo | WeCodeKC</p>
   </footer>
