@@ -96,6 +96,30 @@ header p {
   transition: all .3s ease-in-out;
 }
 
+.certs {
+  height: 65vh;
+  margin: 60px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.certs h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 10px;
+
+}
+
+.certs p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 20px;
+}
+.certified {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 .projects , .other {
   padding-top: 60px;
@@ -185,9 +209,10 @@ header p {
 }
 
 .other {
-  height: 100vh;
+  height: 80vh;
   margin-top: 6rem;
   padding-top: 3rem;
+  margin-bottom: -30px;
 }
 
 .extra {
@@ -331,6 +356,4 @@ section {
     font-size: 1.2rem;
   }
 }
-
-
 
