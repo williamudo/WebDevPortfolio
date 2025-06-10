@@ -97,6 +97,7 @@ header p {
 }
 
 .certs {
+text-align: center;
   height: 65vh;
   margin: 60px;
   margin-bottom: 30px;
